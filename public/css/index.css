@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color:#e0dac6 ;
+}
+header{
+    height: 28%;
+}
+main{
+    height: 72%;
+    display: flex;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.top{
+    background: #752D00;
+    background: linear-gradient(90deg, rgba(117, 45, 0, 1) 0%, rgba(191, 106, 54, 1) 100%);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    word-spacing: 0.2rem;
+}
+.top > p{
+    text-transform: uppercase;
+    color: #dbbc9e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.top > h1{
+    font-size: 3rem;
+    color: #fffbfb;
+}
+.bottom{
+    background: #2c190d;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom > p {
+    text-transform: capitalize;
+    color: #997735;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0.2rem;
+}
+.cafe{
+    background-color: white;
+    height: 100%;
+    width: 23%;
+    border-radius: 12px;
+}
+.picture{
+    background-image: url(../image/espresso.jpg);
+}
+.picture3{
+    background-image:url(../image/laté.avif) ;
+}
+.picture2{
+    background-image: url(../image/capucino.jpg);
+}
+.picture4{
+    background-image: url(../image/Americano.avif);
+}
+.picture4,
+.picture,
+.picture2,
+.picture3{
+    padding: 1rem;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: end;
+}
+.price>.add > button:hover{
+    background: #a85623;
+    background: linear-gradient(90deg, rgba(168, 86, 35, 1) 0%, rgba(217, 153, 113, 1) 100%);
+    color: black;
+    transition:0.4s ;
+}
+button{
+    cursor: pointer;
+}
+.description{
+    height: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cafe-description{
+    height: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cafe-description > p{
+    font-size:0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: grey;
+    word-spacing: 0.2rem;
+    line-height: 1.6rem;
+}
+.cafe-description > h2{
+    color: #2c190d;
+}
+.price{
+    height:33% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price > .add > button{
+    background: #752D00;
+    background: linear-gradient(90deg, rgba(117, 45, 0, 1) 0%, rgba(191, 106, 54, 1) 100%);
+    border: none;
+    padding: 0.8rem 1.7rem;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.price > .price-cafe > h2{
+    font-size: 2rem;
+    color: #634935;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.option{
+    background-color: #caab35;
+    width: fit-content;
+    padding: 0.3rem 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+    height: fit-content;
+}
